@@ -29,6 +29,8 @@ page '/*.txt', layout: false
 #   end
 # end
 
+activate :autoprefixer
+
 # Build-specific configuration
 configure :build do
   activate :minify_css
@@ -36,4 +38,5 @@ configure :build do
 
   # Append a hash to asset urls (make sure to use the url helpers)
   activate :asset_hash
+
 end

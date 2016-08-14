@@ -1,0 +1,21 @@
+body {
+  background: $bgColour;
+  color: $fontColour;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: $baseFontSize * 0.9;
+  padding-bottom: 2rem;
+  font-weight: 200;
+
+  @media (min-width: $screen-md) {
+    font-size: $baseFontSize;
+  }
+}
+
+h1, h2, h3, h4 {
+  color: $headingColor;
+  font-weight: 300;
+}
+
+hr {
+  border-color: rgba($heroBgColour, 0.1);
+}

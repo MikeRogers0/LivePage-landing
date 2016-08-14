@@ -1,0 +1,30 @@
+.hero {
+  padding: 3rem 0 3rem 0;
+  background: $heroBgColour;
+  background: radial-gradient(50% 50%, circle cover, $heroBgColour 10%, darken($heroBgColour, 15%) 100%);
+  color: $heroFontColour;
+  text-align: center;
+  overflow: hidden;
+}
+
+h1 {
+  font-weight: 300;
+  margin-bottom: 3rem;
+  color: $heroFontColour;
+
+  small {
+    margin-top: 1rem;
+    display: block;
+  }
+}
+
+.btn {
+  color: $heroFontColour;
+  font-weight: 300;
+
+  &:hover, &:focus {
+    color: darken($heroFontColour, 5%);
+    border-color: darken($heroFontColour, 5%);
+    background: darken($heroBgColour, 5%);
+  }
+}
