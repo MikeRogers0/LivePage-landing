@@ -6,13 +6,13 @@ This is is used to drive traffic towards the LivePage chrome store webpage https
 
 ## Setting up
 
-  xcode-select --install
-  gem install middleman
+    xcode-select --install
+    gem install middleman
 
 ## Turning on the server
 
-  middleman server
+    middleman server
 
 ## Building & deploying
 
-  middleman build
+    middleman build
