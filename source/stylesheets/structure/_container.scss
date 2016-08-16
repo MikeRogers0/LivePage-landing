@@ -1,8 +1,10 @@
 .container {
   padding: 0 1rem;
-  max-width: 820px;
   margin: 0 auto;
   word-wrap: break-word;
-  // Causes right-margin issue in mobile view
-  // width: 100%;
+  max-width: 1300px;
+
+  @media (max-width: 1400px){
+    max-width: 920px;
+  }
 }
