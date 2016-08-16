@@ -1,4 +1,6 @@
 .btn {
+  @include transition(all .3s ease);
+
   border: 1px solid #fff;
   padding: 0.6rem 1rem 0.7rem 1rem;
   border-radius: 3px;
@@ -7,4 +9,27 @@
   display: inline-block;
 
   &:hover, &:focus {}
+}
+
+// TODO: resolve need for !important
+.btn-primary{
+  background-color: $brandPrimary;
+  border-color: #fff;
+  color: #fff;
+
+  &:hover, &:focus{
+    background-color: #fff;
+    color: $brandPrimary;
+  }
+}
+
+.btn-primary-inv{
+  color: $brandPrimary !important;
+  border-color: $brandPrimary;
+
+  &:hover, &:focus{
+    background-color: $brandPrimary !important;
+    color: #fff !important;
+    border-color: #fff;
+  }
 }

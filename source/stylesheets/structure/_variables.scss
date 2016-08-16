@@ -1,9 +1,13 @@
 // Colours
+$brandPrimary: #6BABC0;
+$brandSecondary: darken($brandPrimary, 10%);
+$brandTertiary: #ee6194;
+
 $bgColour: #fff;
 $fontColour: #262626;
 $baseFontSize: 18px;
 
-$heroBgColour: #6BABC0;
+$heroBgColour: $brandPrimary;
 $heroFontColour: #fff;
 
 $headingColor: $heroBgColour;
