@@ -17,14 +17,3 @@ h1 {
     display: block;
   }
 }
-
-.btn {
-  color: $heroFontColour;
-  font-weight: 300;
-
-  &:hover, &:focus {
-    color: darken($heroFontColour, 5%);
-    border-color: darken($heroFontColour, 5%);
-    background: darken($heroBgColour, 5%);
-  }
-}
