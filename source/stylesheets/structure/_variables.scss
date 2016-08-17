@@ -5,8 +5,8 @@ $brandTertiary: #ee6194;
 
 $bgColour: #fff;
 $fontColour: #262626;
-$baseFontSize: 18px;
-
+$baseFontSize: 1em;
+$headerFontSize: 1.7em 1.5em 1.3em 1em;
 $heroBgColour: $brandPrimary;
 $heroFontColour: #fff;
 
@@ -14,3 +14,8 @@ $headingColor: $heroBgColour;
 
 // Breakpoints
 $screen-md: 768px;
+$screen-lg: 1500px;
+
+// Font scaling
+$smallScale: 0.8;
+$largeScale:1.2;

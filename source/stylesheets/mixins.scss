@@ -5,3 +5,15 @@
   -o-transition: $args;
   transition: $args;
 }
+
+@mixin scaleFont($fontSize) {
+  font-size: $fontSize;
+
+  @media (max-width: $screen-md){
+    font-size: $fontSize * $smallScale;
+  }
+
+  @media (min-width: $screen-lg) {
+    font-size: $fontSize * $largeScale;
+  }
+}

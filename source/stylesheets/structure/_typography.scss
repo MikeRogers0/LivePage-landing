@@ -1,19 +1,31 @@
 body {
+  @include scaleFont(18px);
   background: $bgColour;
   color: $fontColour;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: $baseFontSize * 0.9;
-  padding-bottom: 2rem;
   font-weight: 200;
-
-  @media (min-width: $screen-md) {
-    font-size: $baseFontSize;
-  }
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-bottom: 2rem;
 }
 
 h1, h2, h3, h4 {
   color: $headingColor;
   font-weight: 300;
+}
+
+h1 {
+  @include scaleFont(nth($headerFontSize, 1));
+}
+
+h2 {
+  @include scaleFont(nth($headerFontSize, 2));
+}
+
+h3 {
+  @include scaleFont(nth($headerFontSize, 3));
+}
+
+h4 {
+  @include scaleFont(nth($headerFontSize, 4));
 }
 
 hr {
