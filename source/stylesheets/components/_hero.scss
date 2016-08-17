@@ -1,5 +1,5 @@
 .hero {
-  padding: 3rem 0 3rem 0;
+  padding: 5rem 0 5rem 0;
   background: $heroBgColour;
   background: radial-gradient(50% 50%, circle cover, $heroBgColour 10%, darken($heroBgColour, 15%) 100%);
   color: $heroFontColour;
@@ -8,6 +8,7 @@
 }
 
 h1 {
+  margin-top: 0;
   font-weight: 300;
   margin-bottom: 3rem;
   color: $heroFontColour;
