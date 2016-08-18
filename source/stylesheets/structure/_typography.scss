@@ -1,5 +1,5 @@
 body {
-  @include scaleFont(18px);
+  @include scaleFont($baseFontSize);
   background: $bgColour;
   color: $fontColour;
   font-weight: 200;
