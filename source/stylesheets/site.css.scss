@@ -1,6 +1,7 @@
 @charset "utf-8";
 
-@import "mixins";
+@import "mixins/scale-font";
+
 @import "structure/normalize";
 @import "structure/variables";
 @import "structure/typography";
@@ -10,3 +11,4 @@
 @import "components/hero";
 @import "components/key-features";
 @import "components/faqs";
+@import "components/footer-install";

@@ -23,11 +23,17 @@ page '/*.txt', layout: false
 ###
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+ helpers do
+   def livepage_install_link custom_options = {}, &block
+     options = {
+       class: "btn btn-primary",
+       onclick: "chrome.webstore.install(); return false;",
+       target: "_blank"
+     }.merge(custom_options)
+
+     link_to 'https://chrome.google.com/webstore/detail/livepage/pilnojpmdoofaelbinaeodfpjheijkbh/details', options, &block
+   end
+ end
 
 activate :autoprefixer
 
