@@ -9,8 +9,6 @@
 .key-features__feature {
   text-align: center;
   margin-bottom: 3rem;
-  @include scaleFont($baseFontSize);
-
   flex: 0 0 100%;
 
   @media (min-width: $screen-md) {
