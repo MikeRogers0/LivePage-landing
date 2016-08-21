@@ -26,9 +26,9 @@ page '/*.txt', layout: false
  helpers do
    def livepage_install_link custom_options = {}, &block
      options = {
-       class: "btn btn-primary",
-       onclick: "chrome.webstore.install(); return false;",
-       target: "_blank"
+       class: 'btn btn-primary',
+       onclick: 'chrome.webstore.install(); return false;',
+       target: '_blank'
      }.merge(custom_options)
 
      link_to 'https://chrome.google.com/webstore/detail/livepage/pilnojpmdoofaelbinaeodfpjheijkbh/details', options, &block
@@ -44,5 +44,4 @@ configure :build do
 
   # Append a hash to asset urls (make sure to use the url helpers)
   activate :asset_hash
-
 end
