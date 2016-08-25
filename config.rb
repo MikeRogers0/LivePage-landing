@@ -37,16 +37,17 @@ page '/*.txt', layout: false
 
 activate :autoprefixer
 
+activate :favicon_maker, :icons => {
+  "_favicon_template.png" => [
+    { icon: "favicon.png", size: "16x16" },
+    { icon: "favicon.ico", size: "64x64,32x32,24x24,16x16" },
+  ]
+}
+
 # Build-specific configuration
 configure :build do
   activate :minify_css
   activate :minify_javascript
-  activate :favicon_maker, :icons => {
-    "_favicon_template.png" => [
-      { icon: "favicon.png", size: "16x16" },
-      { icon: "favicon.ico", size: "64x64,32x32,24x24,16x16" },
-    ]
-  }
 
   # Append a hash to asset urls (make sure to use the url helpers)
   activate :asset_hash
