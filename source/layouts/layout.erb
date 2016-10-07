@@ -12,7 +12,6 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
     <%= stylesheet_link_tag :site %>
-    <%= javascript_include_tag :all %>
 
     <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/pilnojpmdoofaelbinaeodfpjheijkbh">
     <link rel="shortcut icon" href="favicon.png" />
@@ -21,5 +20,7 @@
 
   <body class="<%= page_classes %>">
     <%= yield %>
+
+    <%= javascript_include_tag :all, defer: true %>
   </body>
 </html>

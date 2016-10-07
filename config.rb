@@ -26,9 +26,13 @@ page '/*.txt', layout: false
  helpers do
    def livepage_install_link custom_options = {}, &block
      options = {
-       class: 'btn btn-primary',
+       class: 'btn btn-primary btn-livepage-install',
        onclick: 'chrome.webstore.install(); return false;',
-       target: '_blank'
+       target: '_blank',
+       data: {
+         installed_text: "Installed 👍",
+         installed_class: "btn-livepage-installed"
+       }
      }.merge(custom_options)
 
      link_to 'https://chrome.google.com/webstore/detail/livepage/pilnojpmdoofaelbinaeodfpjheijkbh/details', options, &block

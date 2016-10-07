@@ -1,7 +1,21 @@
-// This is where it all goes :)
+(function(){
+  var installButtons = document.querySelectorAll(".btn-livepage-install");
 
-// https://developer.chrome.com/webstore/inline_installation - mostly stuff from this
+  // If it's installed, add a thank you to the button
+  if (chrome.app.isInstalled) {
+    installButtons.forEach(function(installButton){
+      installButton.innerText = installButton.dataset["installedText"]
+      installButton.className += installButton.dataset["installedClass"]
+    });
+    return;
+  }
 
-// Add listener so clicking link to install, triggers inline install.
+  // Add the chrome listerners for the inline installer
+  installButtons.forEach(function(installButton){
+    installButton.addEventListener("click", function(){
+      chrome.webstore.install(); 
+      return false;
+    });
+  });
 
-// Update the button if they've installed it showing a thank you message.
+})();
