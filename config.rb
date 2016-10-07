@@ -27,7 +27,6 @@ page '/*.txt', layout: false
    def livepage_install_link custom_options = {}, &block
      options = {
        class: 'btn btn-primary btn-livepage-install',
-       onclick: 'chrome.webstore.install(); return false;',
        target: '_blank',
        data: {
          installed_text: "Installed 👍",
