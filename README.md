@@ -6,7 +6,7 @@ This is is used to drive traffic towards the LivePage chrome store webpage https
 
 ## Setting up
 
-    xcode-select --install
+    xcode-select --install &&
     gem install middleman
 
 ## Turning on the server
@@ -15,7 +15,7 @@ This is is used to drive traffic towards the LivePage chrome store webpage https
 
 ## Building & deploying
 
-    middleman build
+    middleman build &&
     s3_website push
 
 Then purge `https://livepage.mikerogers.io/*` on cloudflare.
