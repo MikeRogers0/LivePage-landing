@@ -19,3 +19,5 @@
 
 # Don't commit AWS credentials.
 .env
+
+tmp/*
