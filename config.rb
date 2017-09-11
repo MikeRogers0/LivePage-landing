@@ -38,8 +38,6 @@ page '/*.txt', layout: false
    end
  end
 
-activate :autoprefixer
-
 activate :favicon_maker, :icons => {
   "_favicon_template.png" => [
     { icon: "favicon.png", size: "16x16" },

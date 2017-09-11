@@ -10,7 +10,6 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 
 # Middleman Gems
 gem 'middleman'
-gem 'middleman-autoprefixer'
 gem 'middleman-favicon-maker', '~> 4.0'
 
 # Deploying

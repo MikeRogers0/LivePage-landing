@@ -1,7 +1,7 @@
 .hero {
   padding: 5rem 0 5rem 0;
   background: $heroBgColour;
-  background: radial-gradient(50% 50%, circle cover, $heroBgColour 10%, darken($heroBgColour, 15%) 100%);
+  background: linear-gradient($heroBgColour , darken($heroBgColour, 1%));
   color: $heroFontColour;
   text-align: center;
   overflow: hidden;
