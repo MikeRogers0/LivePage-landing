@@ -24,20 +24,32 @@ page '/*.txt', layout: false
 ###
 
 # Methods defined in the helpers block are available in templates
- helpers do
-   def livepage_install_link custom_options = {}, &block
-     options = {
-       class: 'btn btn-primary btn-livepage-install',
-       target: '_blank',
-       data: {
-         installed_text: 'Installed 👍',
-         installed_class: 'btn-livepage-installed'
-       }
-     }.merge(custom_options)
+helpers do
+  def livepage_install_link(custom_options = {}, &block)
+    options = {
+      class: 'btn btn-primary btn-livepage-install',
+      target: '_blank',
+      data: {
+        installed_text: 'Installed 👍',
+        installed_class: 'btn-livepage-installed'
+      }
+    }.merge(custom_options)
 
-     link_to 'https://chrome.google.com/webstore/detail/livepage/pilnojpmdoofaelbinaeodfpjheijkbh/details', options, &block
-   end
- end
+    link_to 'https://chrome.google.com/webstore/detail/livepage/pilnojpmdoofaelbinaeodfpjheijkbh/details', options, &block
+  end
+
+  def root_url
+    ENV.fetch('URL') { 'https://trackchanges.mikerogers.io' }
+  end
+
+  def current_url
+    if current_page.url == '/'
+      root_url + '/'
+    else
+      root_url + current_page.url[0..-1]
+    end
+  end
+end
 
 activate :favicon_maker, icons: {
   '_favicon_template.png' => [
