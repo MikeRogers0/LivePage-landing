@@ -1,0 +1,27 @@
+{
+  "name": "LivePages Marketing",
+  "description": "LivePages Landing site",
+  "scripts": {},
+  "env": {
+    "URL": "/",
+    "LANG": {
+      "required": true
+    },
+    "RACK_ENV": {
+      "required": true
+    },
+    "SERVE_STATIC": {
+      "required": true
+    }
+  },
+  "formation": {},
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-jvm-common.git"
+    },
+    {
+      "url": "heroku/ruby"
+    }
+  ]
+}

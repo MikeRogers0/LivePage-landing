@@ -1,1 +1,2 @@
-web: bundle exec middleman server
+release: bash ./release-tasks.sh
+web: bundle exec puma -C config/puma.rb
