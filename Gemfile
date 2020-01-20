@@ -3,7 +3,7 @@ ruby File.read('.ruby-version').chomp
 source 'https://rubygems.org' do
   gem 'dotenv', groups: %i[development test]
 
-  gem 'puma', '~> 3.7'
+  gem 'puma', '~> 3.12'
   gem 'rake'
   gem 'rack-contrib'
 
