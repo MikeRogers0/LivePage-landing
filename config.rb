@@ -35,11 +35,13 @@ helpers do
       }
     }.merge(custom_options)
 
-    link_to 'https://chrome.google.com/webstore/detail/livepage/pilnojpmdoofaelbinaeodfpjheijkbh/details', options, &block
+    # link_to 'https://chrome.google.com/webstore/detail/livepage/pilnojpmdoofaelbinaeodfpjheijkbh/details', options, &block
+
+    link_to 'https://github.com/MikeRogers0/LivePage', options, &block
   end
 
   def root_url
-    ENV.fetch('URL') { 'https://trackchanges.mikerogers.io' }
+    ENV.fetch('URL') { 'https://livepage.mikerogers.io' }
   end
 
   def current_url
