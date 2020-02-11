@@ -6,7 +6,7 @@ This is is used to drive traffic towards the LivePage chrome store webpage https
 
 ### Local development
 
-  https://livepage-marketing.localhost/
+  https://livepage-landing.test/
 
 ### Production
   
@@ -43,4 +43,4 @@ In terminal run:
 
 The navigate to the outputted domain. Alternatively setup using [Puma-dev](https://gist.github.com/MikeRogers0/29ad917e3e34bb8af403f161e78af233) and visit:
 
-    https://livepage-marketing.localhost/
+    https://livepage-landing.test/
