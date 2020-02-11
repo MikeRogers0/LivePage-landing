@@ -4,6 +4,14 @@
   <div>
     <h3>Is LivePage still maintained?</h3>
     <p>As of the 10th of February 2020 is not actively maintained. You can still find the source code on GitHub if you'd like to use it.</p>
+    <p>Alternatively both <%= link_to 'react-hot-loader', 'https://github.com/gaearon/react-hot-loader' %> &amp; <%= link_to 'vue-loader', 'https://vue-loader.vuejs.org/guide/hot-reload.html' %> offer a really good reloading experience.</p>
+  </div>
+
+  <hr />
+
+  <div>
+    <h3>CORS error when running on file:// protocol</h3>
+    <p>Google Chrome doesn't allow access to AJAX requests when on the file:// protocol any more. Instead serve your local files via <%= link_to 'http-server', 'https://www.npmjs.com/package/http-server' %>.</p>
   </div>
 
   <hr />
